@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Hikaru's Portfolio</title>
+    <link rel="icon" href="./img/fabicon.svg" type="image/svg+xml">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@4.0.0/destyle.min.css"
+    />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "isf6fjg",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <img src="./img/site_logo.svg" alt="Hikaru's Portfolio">
+        <span>Hikaru's Portfolio</span>
+      </h1>
+    </header>
+    <div id="profile">
+      <div class="section_header">
+        <h2>- PROFILE -</h2>
+      </div>
+      <div class="section_container">
+        <div class="img_container">
+          <img id="profile_img" src="./img/profile.png" alt="吉村　陽">
+        </div>
+        <div class="profile_text">
+          <h3>吉村　陽</h3>
+          <div class="profile_sentence">
+            <p>2001年生まれ、岐阜県出身。大同大学情報学部情報デザイン学科所属。</p>
+            <p>大学の授業を通してデザインの基礎を学び、デザインによる、伝えたい情報を正確に伝えることの重要性を学びました。</p>
+            <p>現在は学んだ経験を基に、これまで触れてこなかった技術や知識を積極的に取り込み、一際目を惹けるデザインを制作することに挑戦しています。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="skills">
+      <div class="section_header">
+        <h2>- SKILLS -</h2>
+      </div>
+      <div class="section_container">
+        <div class="skills_flex">
+          <div class="skills_container">
+            <h3>Photoshop</h3>
+            <img src="./img/Ps_icon.svg" alt="Photoshop">
+            <div class="skills_text">
+              <p>基本的な操作は習得済み。</p>
+            <p>画像の色彩調整や、サイズ変更、レイヤーマスクによる画像合成ができます。</p>
+            </div>
+          </div>
+          <div class="skills_container">
+            <h3>Illustrator</h3>
+            <img src="./img/Ai_icon.svg" alt="Illustrator">
+            <div class="skills_text">
+              <p>基本的な操作は習得済み。</p>
+              <p>ロゴ制作や文字作成、サイトのアイコン制作において頻繁に利用しています。</p>
+            </div>
+          </div>
+          <div class="skills_container">
+            <h3>HTML・CSS</h3>
+            <img src="./img/html_icon.svg" alt="Photoshop">
+            <div class="skills_text">
+              <p>コーディングやレスポンシブ対応は一通り可能。</p>
+              <p>JavaScriptを用いた、簡単なアニメーションも実装できます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="works">
+      <div class="section_header">
+        <h2>- WORKS -</h2>
+      </div>
+      <div class="section_container">
+        <div id="web" class="works_grid">
+          <h3>Webサイト</h3>
+          <a class="image1" href="#">
+            <img src="./img/profile.png" alt="Nostalgia 99">
+          </a>
+          <a class="image2" href="#">
+            <img src="./img/profile.png" alt="Nostalgia 99">
+          </a>
+          <a class="image3" href="#">
+            <img src="./img/profile.png" alt="Nostalgia 99">
+          </a>
+        </div>
+        <div id="graphic" class="works_grid">
+          <h3>印刷物・グラフィック</h3>
+          <a class="image1" href="#">
+            <img src="./img/profile.png" alt="Nostalgia 99">
+          </a>
+          <a class="image2" href="#">
+            <img src="./img/profile.png" alt="Nostalgia 99">
+          </a>
+          <a class="image3" href="#">
+            <img src="./img/profile.png" alt="Nostalgia 99">
+          </a>
+        </div>
+        <div id="hobby" class="works_grid">
+          <h3>趣味制作</h3>
+          <a class="image1" href="#">
+            <img src="./img/profile.png" alt="Nostalgia 99">
+          </a>
+          <a class="image2" href="#">
+            <img src="./img/profile.png" alt="Nostalgia 99">
+          </a>
+          <a class="image3" href="#">
+            <img src="./img/profile.png" alt="Nostalgia 99">
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h2>- CONTACT -</h2>
+      <h3>MAIL : yoshihika1387@icloud.com</h3>
+      <h3>TEL : 090-5855-5236</h3>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CustomEase.min.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
+  </body>
+</html>
